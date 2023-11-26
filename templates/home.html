@@ -48,6 +48,13 @@
     <p class="lead">Rajiv Gandhi University of Knowledge Technologies (RGUKT) is a renowned institution in India, established to provide quality education in technology and applied sciences. With campuses in different regions, RGUKT aims to empower rural youth by offering specialized programs in engineering, sciences, and other fields. The university's focus on integrating technology with education has led to innovative teaching methods, fostering an environment for holistic learning and skill development. RGUKT's commitment to fostering talent and promoting research has contributed significantly to the academic landscape in India.
 </p>
     <h2 class="text-center mt-2 mb-4">Open Positions</h2>
+
+    <div>
+      <!-- template for dynamic changes  {{jobs}}-->
+      {% for job in jobs %}
+        {% include 'jobitems.html' %}
+      {% endfor %}
+    </div>
     <p>TODO - Show the jobs here</p>
     <div class="text-center">
     <button class="btn btn-primary btn-lg">Contact Us</button>
